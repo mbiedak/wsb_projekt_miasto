@@ -59,7 +59,7 @@ namespace projekt_miasto
 
         public virtual void WyswietlInformacje()
         {
-            Console.WriteLine("Mam na imię {0}. Mam lat: {1}.", this.Imie, this.Wiek);
+            Console.WriteLine("Mam na imię {0}. Mam lat: {1}. A moja rasa to {2}. A moj gatunek to: {3}", this.Imie, this.Wiek, this.RasaZwierzaka(), this.GatunekZwierzatka());
         }
         //ta metoda moze wyswietlic podstawowe informacje o zwierzaku
     }

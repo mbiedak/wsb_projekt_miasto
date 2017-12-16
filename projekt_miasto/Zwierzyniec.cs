@@ -8,12 +8,12 @@ namespace projekt_miasto
 {
     class Zwierzyniec :IInformacje
     {
-        private static Zwierzyniec o_instancja;
+        private static Zwierzyniec o_instancja = null;
         private List<Zwierzatko> o_listaZwierzatek;
 
         public Zwierzyniec()
         {
-            o_instancja = Instancja();
+            o_listaZwierzatek = new List<Zwierzatko>();
         }
         public Zwierzyniec(Zwierzatko zwierzatko):this()
         {
@@ -34,9 +34,12 @@ namespace projekt_miasto
         }
         public void DodajZwierzatko(Zwierzatko o_zwierzatko)
         {
-            o_listaZwierzatek.Add(o_zwierzatko);
-            Console.WriteLine("Dziękujemy, zwierzyniec przyjął poniższe zwierzątko:");
-            o_zwierzatko.WyswietlInformacje();
+            if (o_zwierzatko != null)
+            {
+                o_listaZwierzatek.Add(o_zwierzatko);
+                Console.WriteLine("Dziękujemy, zwierzyniec przyjął poniższe zwierzątko:");
+                o_zwierzatko.WyswietlInformacje();
+            }
         }
         //public Zwierzatko DodajZwierzatko(Zwierzatko o_zwierzatko) {}
         //metoda dodaje zwierzaka przekazanego jako argument 

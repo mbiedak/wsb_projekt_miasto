@@ -30,7 +30,7 @@ namespace projekt_miasto
 */
         public Osoba()
         {
-
+            this.o_listaZwierzatek = new List<Zwierzatko>();
             this.Plec = RodzajPlci.BRAK_DANYCH;
             this.UstawDane(Toolbox.BRAK_DANYCH, Toolbox.BRAK_DANYCH);
             this.Adres = new Adres();
@@ -99,6 +99,7 @@ namespace projekt_miasto
 
         public void AdoptujZwierza(Zwierzatko o_zwierzatko)
         {
+            /*
             Zwierzyniec schronisko = Zwierzyniec.Instancja();
             schronisko.WyswietlInformacje();
             int indeks = Toolbox.inputInteger(string.Format("Podaj numer indeksu zwierzątka, które chcesz zaadoptować lub {0} aby zrezygnować: ", schronisko.IleZwierzat()), 0, schronisko.IleZwierzat());
@@ -108,6 +109,10 @@ namespace projekt_miasto
                 o_listaZwierzatek.Add(schronisko.PobierzZwierzatko(indeks));
                 Console.WriteLine("Gratulacje! Zaadoptowałeś zwierzątko:");
                 o_listaZwierzatek[o_listaZwierzatek.Count-1].WyswietlInformacje();
+            }*/
+            if (o_zwierzatko != null)
+            {
+                o_listaZwierzatek.Add(o_zwierzatko);
             }
         }
         //public void AdoptujZwierza(Zwierzatko o_zwierzatko);    
@@ -116,6 +121,12 @@ namespace projekt_miasto
         {
             Console.WriteLine("Imie = {0} Nazwisko = {1}", this.Imie, this.Nazwisko);
             this.Adres.WyswietlInformacje();
+
+            foreach (Zwierzatko zwierz in o_listaZwierzatek)
+            {
+                zwierz.WyswietlInformacje();
+                zwierz.NiechZwierzCosPowie();
+            }
         }
 
     }
