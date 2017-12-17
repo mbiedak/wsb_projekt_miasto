@@ -6,12 +6,6 @@ using System.Threading.Tasks;
 
 namespace projekt_miasto
 {
-//Grupa 1
-//Agnieszka Wolak
-//Tomasz Zimowski
-//Dawid Łukaszyk 
-
-
     class Program
     {
         static void Main(string[] args)

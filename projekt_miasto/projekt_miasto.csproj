@@ -50,12 +50,14 @@
     <Compile Include="Miasto.cs" />
     <Compile Include="Osoba.cs" />
     <Compile Include="Pies.cs" />
+    <Compile Include="Pojazd.cs" />
+    <Compile Include="PojazdOsobowy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Samochod.cs" />
     <Compile Include="Silnik.cs" />
     <Compile Include="Syjamski.cs" />
     <Compile Include="Toolbox.cs" />
+    <Compile Include="ZbiornikPaliwa.cs" />
     <Compile Include="Zwierzatko.cs" />
     <Compile Include="Zwierzyniec.cs" />
   </ItemGroup>
