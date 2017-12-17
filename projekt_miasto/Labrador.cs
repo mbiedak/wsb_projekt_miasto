@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace projekt_miasto
 {
-    class Labrador : Pies
-    {
-        public Labrador(string imie, int wiek) : base(imie, wiek)
-        {
+	class Labrador : Pies
+	{
+		public Labrador(string imie, int wiek) : base(imie, wiek)
+		{
 
-        }
+		}
 
-        public override string RasaZwierzaka()
-        {
-            return "labrador";
-        }
+		public override string RasaZwierzaka()
+		{
+			return "labrador";
+		}
 
-    }
+	}
 }

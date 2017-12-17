@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace projekt_miasto
 {
-    interface IInformacje
-    {
-        void WyswietlInformacje();
-    }
+	interface IInformacje
+	{
+		void WyswietlInformacje();
+	}
 }

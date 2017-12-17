@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace projekt_miasto
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
+	class Program
+	{
+		static void Main(string[] args)
+		{
 
-            Zwierzyniec.Instancja().DodajZwierzatko(new Labrador("labcio", 10));
-            Zwierzyniec.Instancja().DodajZwierzatko(new Syjamski("kotel", 8));
-            Zwierzyniec.Instancja().WyswietlInformacje();
-
-
-            Osoba osoba1 = new Osoba();
-            osoba1.UstawDane("Mateusz", "Biedak", Osoba.RodzajPlci.MEZCZYZNA, 25, new Adres("Test","Testowe","64-500",1,1), "biedakmateusz@gmail.com");
-            osoba1.AdoptujZwierza(Zwierzyniec.Instancja().PobierzZwierzatko(0));
-            osoba1.WyswietlInformacje();
-
-            Zwierzyniec.Instancja().WyswietlInformacje();
+			Zwierzyniec.Instancja().DodajZwierzatko(new Labrador("labcio", 10));
+			Zwierzyniec.Instancja().DodajZwierzatko(new Syjamski("kotel", 8));
+			Zwierzyniec.Instancja().WyswietlInformacje();
 
 
-            /*
+			Osoba osoba1 = new Osoba();
+			osoba1.UstawDane("Mateusz", "Biedak", Osoba.RodzajPlci.MEZCZYZNA, 25, new Adres("Test", "Testowe", "64-500", 1, 1), "biedakmateusz@gmail.com");
+			osoba1.AdoptujZwierza(Zwierzyniec.Instancja().PobierzZwierzatko(0));
+			osoba1.WyswietlInformacje();
+
+			Zwierzyniec.Instancja().WyswietlInformacje();
+
+
+			/*
             int end;
             //Console.WriteLine(silnik.ConvertLKmToMpg(7.2).ToString("F2"));
             //Console.WriteLine(silnik.ConvertMpgToLKM(50).ToString("F1"));
@@ -70,7 +70,7 @@ namespace projekt_miasto
             Console.ReadKey();
             */
 
-        }
-    }
+		}
+	}
 }
 

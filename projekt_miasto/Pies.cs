@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace projekt_miasto
 {
-    class Pies : Zwierzatko
-    {
-        public Pies(string imie, int wiek): base(imie,wiek)
-        {
+	class Pies : Zwierzatko
+	{
+		public Pies(string imie, int wiek) : base(imie, wiek)
+		{
 
-        }
+		}
 
-        public override string GatunekZwierzatka()
-        {
-            return "pies";
-        }
+		public override string GatunekZwierzatka()
+		{
+			return "pies";
+		}
 
-        public override void NiechZwierzCosPowie()
-        {
-            Console.WriteLine("Hau hau");
-        }
+		public override void NiechZwierzCosPowie()
+		{
+			Console.WriteLine("Hau hau");
+		}
 
-        public override string RasaZwierzaka()
-        {
-            throw new NotImplementedException(); 
-        }
-    }
+		public override string RasaZwierzaka()
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

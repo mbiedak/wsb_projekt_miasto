@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace projekt_miasto
 {
-    class Syjamski : Kot
-    {
-        public Syjamski(string imie, int wiek) : base(imie, wiek)
-        {
+	class Syjamski : Kot
+	{
+		public Syjamski(string imie, int wiek) : base(imie, wiek)
+		{
 
-        }
-       
-        public override string RasaZwierzaka()
-        {
-            return "syjamski";
-        }
-        
-    }
+		}
+
+		public override string RasaZwierzaka()
+		{
+			return "syjamski";
+		}
+
+	}
 }
